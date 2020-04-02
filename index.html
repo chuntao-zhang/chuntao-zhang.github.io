@@ -159,6 +159,150 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-常用的Linux命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/04/02/%E5%B8%B8%E7%94%A8%E7%9A%84Linux%E5%91%BD%E4%BB%A4/">常用的Linux命令</a>
+    </h1>
+  
+
+        
+        <a href="/2020/04/02/%E5%B8%B8%E7%94%A8%E7%9A%84Linux%E5%91%BD%E4%BB%A4/" class="archive-article-date">
+  	<time datetime="2020-04-02T03:43:14.137Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-04-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>linux的文件结构 </p>
+<p>/  根目录下的目录</p>
+<p>/bin</p>
+<p>/home</p>
+<p>/dev</p>
+<p>/usr</p>
+<p>/opt</p>
+<p>/etc</p>
+<p>…</p>
+<p>没办法。要想用Linux，必须要记住常用Linux命令</p>
+<p>cd &lt;目录&gt; </p>
+<p>进入目录，与DOS基本相同</p>
+<p>ls </p>
+<p>列出文件，相当于DOS的dir</p>
+<p>ls -l </p>
+<p>显示文件和目录的详细资料</p>
+<p>ls -a </p>
+<p>显示隐藏文件</p>
+<p>cp &lt;源文件名&gt; &lt;目标文件名&gt; </p>
+<p>复制文件，相当于DOS的copy</p>
+<p>mv &lt;源文件名&gt; &lt;目标文件名&gt; </p>
+<p>移动文件</p>
+<p>rm &lt;文件名&gt;</p>
+<p>删除文件，相当于DOS的del</p>
+<p>date </p>
+<p>显示系统日期</p>
+<p>cat &lt;文件名&gt;</p>
+<p>在屏幕上打印出文件内容，相当于DOS的type</p>
+<p>mkdir &lt;目录名&gt;</p>
+<p>创建目录，相当于DOS的md</p>
+<p>shutdown -h now</p>
+<p>立即关机</p>
+<p>pwd </p>
+<p>显示当前路径</p>
+<p>chmod</p>
+<p>改变文件权限</p>
+<p>例如:</p>
+<p>chmod +x &lt;文件名&gt;  //使文件具有运行权，即可运行文件</p>
+<p>sudo …</p>
+<p>以root身份执行命令</p>
+<p>如：sudo shutdown -h now (关机必须是root身份)</p>
+<p>sudo passwd &lt;用户名&gt;</p>
+<p>修改用户密码</p>
+<p>reboot</p>
+<p>重新启动(必须是root身份)</p>
+<p>记得要用 sudo reboot</p>
+<p>apt-get </p>
+<p>联网下载、安装、删除软件包的命令(一般是用root身份)，这个命令是Debian linux系统用的，功能很强</p>
+<p>例如：</p>
+<p>sudo apt-get update  //升级列表中的软件包</p>
+<p>sudo apt-get upgrade  //升级所有已安装的软件</p>
+<p>sudo apt-get install vsftpd //下载并安装vsftpd(一个ftp服务器)</p>
+<p>sudo apt-get remove vsftpd //删除vsftpd</p>
+<p>apt-cache search gcc  在apt cache中查找有否一个名为gcc的包</p>
+<p>dpkg -i 1.deb 安装名为1.deb的包</p>
+<p>wget <URL></p>
+<p>直接从网上下载一个文件</p>
+<p>vi &lt;文件名&gt;</p>
+<p>文件编辑命令 </p>
+<p>vi不太好用，要记一串命令，不太推荐</p>
+<p>nano &lt;文件名&gt;</p>
+<p>文件编辑命令nano，这个很好用，学一分钟就会</p>
+<p>CTRL+O 存盘</p>
+<p>CTRL+X 退出 </p>
+<p>startx</p>
+<p>启动窗口系统</p>
+<p>zip file1.zip file1 创建一个zip格式的压缩包</p>
+<p>unzip file1.zip 解压一个zip格式压缩包</p>
+<p>tar -xvfz archive.tar.gz 解压一个gzip格式的压缩包</p>
+<p>tar -cvfz archive.tar.gz dir1 创建一个gzip格式的压缩包</p>
+<p>df -h    查看磁盘空间</p>
+<p>lsusb   查看USB设备</p>
+<p>lsmod   显示已载入系统的模块<em>,lsmod</em> 其实就是list modules的缩写</p>
+<p>sudo insserv /etc/init.d/mysript    设置启动服务/etc/init.d/mysript</p>
+<p>sudo insserv -r /etc/init.d/mysript    删除启动服务/etc/init.d/mysript</p>
+<p>sudo hostname newname          修改主机名</p>
+<p>sudo adduser username   增加用户</p>
+<p>sudo deluser username  删除用户</p>
+<p>sudo halt    关机</p>
+<p>tips: Linux命令中出现文件名时，只需输入前几个字符，再按tab键，则linux会自动将文件名全部列出</p>
+<p>个人认为最人性化的一点</p>
+<p>Linux的命令还有很多，在实际运用中，多多学习。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/04/02/%E5%B8%B8%E7%94%A8%E7%9A%84Linux%E5%91%BD%E4%BB%A4/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-[Windows 命令行基础]" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
