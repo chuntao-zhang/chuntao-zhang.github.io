@@ -159,6 +159,97 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-西门子PLC Modbus地址映射" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/10/16/%E8%A5%BF%E9%97%A8%E5%AD%90PLC%20Modbus%E5%9C%B0%E5%9D%80%E6%98%A0%E5%B0%84/">西门子PLC Modbus地址映射</a>
+    </h1>
+  
+
+        
+        <a href="/2020/10/16/%E8%A5%BF%E9%97%A8%E5%AD%90PLC%20Modbus%E5%9C%B0%E5%9D%80%E6%98%A0%E5%B0%84/" class="archive-article-date">
+  	<time datetime="2020-10-16T05:02:46.016Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Modbus地址映射</p>
+<p>PLC程序编写完成后，下一步进行Modbus测试，在测试之前，首先明确Modbus地址与PLC地址的映射关系：</p>
+<table>
+<thead>
+<tr>
+<th align="left">Modbus地址</th>
+<th align="left">PLC地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">00001-08192</td>
+<td align="left">Q0.0-Q1023.7</td>
+</tr>
+<tr>
+<td align="left">10001-18192</td>
+<td align="left">I0.0-I1023.7</td>
+</tr>
+<tr>
+<td align="left">30001-31022</td>
+<td align="left">IW0-IW1022</td>
+</tr>
+<tr>
+<td align="left">40001-40099</td>
+<td align="left">DB100.DBW0-DB100.DBW198</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>由上表可知，Modbus的0区、1区和3区，分别对应PLC的过程映像输出、过程映像输入和过程映像输入，但实际应用中，这三个区应用较少，主要使用的是4区，4区的映射地址是由自己设置，也就是MB_HOLD_REG。</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/10/16/%E8%A5%BF%E9%97%A8%E5%AD%90PLC%20Modbus%E5%9C%B0%E5%9D%80%E6%98%A0%E5%B0%84/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Modbus 协议简介" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
